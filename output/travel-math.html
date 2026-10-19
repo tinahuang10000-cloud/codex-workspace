@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>行程问题 · 画图法</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef8ff;color:#193454;font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:20px}main{max-width:1280px;margin:auto;padding:32px 24px}.tag{color:#087e83;font-size:17px;font-weight:bold;letter-spacing:3px}h1{font-size:clamp(30px,4vw,48px);margin:10px 0 20px}h1 span{color:#1679d5}.question{background:#fff;border-radius:20px;padding:22px 28px;line-height:1.9;border-left:7px solid #21b8ad}.blue{color:#1675d5}.orange{color:#d66a0a}.layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(320px,1fr);gap:22px;margin-top:22px}.card{background:white;border-radius:24px;padding:26px;box-shadow:0 8px 28px #194a7d09}h2{font-size:24px;margin:0 0 16px}.hint{font-size:18px;color:#53708b;line-height:1.6}.diagram{width:100%;display:block;height:auto}svg text{font-family:inherit;font-weight:bold}.status{background:#edf9f6;color:#137b65;padding:14px;border-radius:14px;text-align:center;font-size:22px;font-weight:bold;min-height:58px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.stat{background:#f2f7fc;border-radius:13px;padding:14px 5px;text-align:center;font-size:15px}.stat strong{display:block;font-size:25px;margin-top:8px}.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}button,select{font:inherit;border-radius:12px;padding:12px 16px;border:0;cursor:pointer}button{background:#1778d5;color:white;font-weight:bold}button.secondary{background:#e9f3ff;color:#1864a9}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f1ac24;outline-offset:4px}select{background:#eff5fb;color:#193454}input[type=range]{width:100%;accent-color:#1675d5;cursor:pointer;margin:14px 0 4px}.progress-label{font-size:16px;color:#53708b}.step{margin:18px 0;padding:17px;border-radius:15px;background:#f4f8ff;line-height:1.7}.step b{display:block;font-size:18px;color:#597086}.formula{font-size:clamp(22px,2.2vw,29px);font-weight:bold;white-space:nowrap}.answer{border:2px dashed #a6c8e8;border-radius:16px;padding:18px;color:#597086;line-height:1.8;transition:background .3s}.answer.done{background:#fff5c8;border-color:#e5ad14;color:#714d00}.tip{margin-top:18px;font-size:17px;line-height:1.7;color:#597086}.meet{animation:flash .7s ease-in-out 6}@keyframes flash{50%{filter:drop-shadow(0 0 12px #ffbd00);opacity:.35}}footer{text-align:center;color:#66839d;font-size:15px;margin-top:22px}@media(max-width:900px){.layout{grid-template-columns:1fr}.card{padding:18px}main{padding:22px 12px}.question{padding:16px;font-size:18px}.formula{font-size:25px}}@media(prefers-reduced-motion:reduce){.meet{animation-iteration-count:2}}
+</style>
+</head>
+<body><main>
+<div class="tag">小学数学 · 动手看一看</div>
+<h1>两车何时相遇？<span>行程问题 · 画图法</span></h1>
+<div class="question">甲乙两地相距 <strong>360 千米</strong>。<span class="blue"><strong>客车</strong>从甲地开往乙地，每小时行 <strong>60 千米</strong></span>；<span class="orange"><strong>货车</strong>从乙地开往甲地，每小时行 <strong>40 千米</strong></span>。<br><strong>两车同时出发，几小时后相遇？</strong></div>
+<div class="layout"><section class="card"><h2>① 画线段图，看两车相向而行</h2><div class="hint">蓝色表示客车，橙色表示货车。两车越靠近，剩余距离越短。</div>
+<svg class="diagram" viewBox="0 0 760 420" role="img" aria-label="甲乙相距360千米，客车向右，货车向左，在距离甲地216千米处相遇">
+<defs><marker id="blueArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#1675d5"/></marker><marker id="orangeArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#e98024"/></marker>
+<g id="busShape"><rect x="-36" y="-25" width="72" height="39" rx="9" fill="#1675d5"/><path d="M-27 -17H-12V-3H-27ZM-6 -17H9V-3H-6ZM15 -17H29V-3H15Z" fill="#dff5ff"/><circle cx="-23" cy="16" r="8" fill="#193454"/><circle cx="23" cy="16" r="8" fill="#193454"/></g>
+<g id="truckShape"><path d="M-37 -6L-25 -24H-8V14H-37Z" fill="#e98024"/><rect x="-5" y="-31" width="42" height="45" rx="4" fill="#ffa843"/><path d="M-30 -6L-22 -18H-15V-6Z" fill="#fff4db"/><circle cx="-23" cy="16" r="8" fill="#193454"/><circle cx="23" cy="16" r="8" fill="#193454"/></g></defs>
+<path d="M70 73V55H690V73" fill="none" stroke="#68849c" stroke-width="2"/><rect x="268" y="34" width="224" height="40" rx="12" fill="white"/><text x="380" y="63" text-anchor="middle" font-size="26" fill="#193454">全程 360 千米</text>
+<text x="70" y="111" text-anchor="middle" font-size="24" fill="#1675d5">甲地</text><text x="690" y="111" text-anchor="middle" font-size="24" fill="#d66a0a">乙地</text>
+<path d="M82 144H215" stroke="#1675d5" stroke-width="4" marker-end="url(#blueArrow)"/><text x="148" y="132" text-anchor="middle" font-size="17" fill="#1675d5">客车 60 千米/时</text>
+<path d="M678 144H545" stroke="#e98024" stroke-width="4" marker-end="url(#orangeArrow)"/><text x="612" y="132" text-anchor="middle" font-size="17" fill="#d66a0a">货车 40 千米/时</text>
+<path d="M70 220H690" stroke="#d3dfe9" stroke-width="10" stroke-linecap="round"/><path id="busTrail" d="M70 220H70" stroke="#1675d5" stroke-width="10"/><path id="truckTrail" d="M690 220H690" stroke="#f5a044" stroke-width="10"/>
+<path d="M70 205V237M690 205V237" stroke="#193454" stroke-width="4"/>
+<g id="vehicles"><g id="bus" transform="translate(70 190)"><use href="#busShape"/></g><g id="truck" transform="translate(690 250)"><use href="#truckShape"/></g></g>
+<g id="meeting" visibility="hidden"><path d="M442 163V300" stroke="#e3a310" stroke-width="3" stroke-dasharray="6 5"/><rect x="375" y="306" width="134" height="40" rx="20" fill="#fff0a3"/><text x="442" y="333" text-anchor="middle" font-size="23" fill="#966600">★ 相遇啦！</text></g>
+<text id="busDistance" x="220" y="374" text-anchor="middle" font-size="21" fill="#1675d5">客车已行 0 千米</text><text id="truckDistance" x="547" y="404" text-anchor="middle" font-size="21" fill="#d66a0a">货车已行 0 千米</text>
+</svg>
+<div id="status" class="status" role="status">准备好啦！点击“开始演示”一起出发。</div>
+<div class="stats"><div class="stat">经过时间<strong id="time">0.0 小时</strong></div><div class="stat">剩余距离<strong id="remaining">360 千米</strong></div><div class="stat">共同接近速度<strong>100 千米/时</strong></div></div>
+<label class="progress-label" for="progress">拖动进度，观察任意时刻</label><input id="progress" type="range" min="0" max="360" value="0" aria-label="行驶时间进度">
+<div class="controls"><button id="play">▶ 开始演示</button><button id="reset" class="secondary">↺ 重新开始</button><select id="speed" aria-label="演示速度"><option value="1">正常速度</option><option value="0.5">慢速讲解</option><option value="2">快速演示</option></select></div>
+</section>
+<aside class="card"><h2>② 想一想，列算式</h2><div class="step"><b>每过 1 小时，两车一共靠近多少？</b><div class="formula"><span class="blue">60</span> + <span class="orange">40</span> = 100</div><div>每小时共同靠近 <strong>100 千米</strong></div></div><div class="step"><b>相遇时间 = 总路程 ÷ 速度和</b><div class="formula">360 ÷ (60 + 40)</div><div class="formula">= 360 ÷ 100</div><div class="formula blue">= 3.6 小时</div></div><div id="answer" class="answer"><strong>答：两车 3.6 小时后相遇。</strong><br>也就是 <strong>3 小时 36 分钟</strong>。</div><div class="tip" id="explain">观察线段：相遇时，两车走过的路程合起来，正好是全程 360 千米。</div><div class="step"><b>记住这个小窍门</b>同时出发、相向而行：<br><strong>把速度加起来，再用总路程去除！</strong></div></aside></div>
+<footer>动画为加速演示，画面中的“小时”表示题目里的实际时间。</footer>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);let elapsed=0,running=false,last=0,met=false;
+const total=3.6,duration=18000;
+function fmt(n){return Number(n.toFixed(1)).toString()}
+function render(){const t=elapsed*total,a=60*t,b=40*t,x=70+a/360*620,y=690-b/360*620,done=elapsed>=1;
+$('bus').setAttribute('transform',`translate(${x} 190)`);$('truck').setAttribute('transform',`translate(${y} 250)`);$('busTrail').setAttribute('d',`M70 220H${x}`);$('truckTrail').setAttribute('d',`M690 220H${y}`);
+$('time').textContent=t.toFixed(1)+' 小时';$('remaining').textContent=fmt(360-a-b)+' 千米';$('busDistance').textContent='客车已行 '+fmt(a)+' 千米';$('truckDistance').textContent='货车已行 '+fmt(b)+' 千米';$('progress').value=Math.round(elapsed*360);
+$('meeting').setAttribute('visibility',done?'visible':'hidden');$('answer').classList.toggle('done',done);
+if(done&&!met){$('vehicles').classList.remove('meet');void $('vehicles').getBoundingClientRect();$('vehicles').classList.add('meet')}if(!done)$('vehicles').classList.remove('meet');met=done;
+$('status').textContent=done?'★ 3.6 小时后，两车相遇啦！':elapsed===0?'准备好啦！点击“开始演示”一起出发。':`两车${running?'正在靠近':'暂停在这里'}：还相距 ${fmt(360-a-b)} 千米`;
+$('explain').textContent=done?'相遇验证：客车行了 216 千米，货车行了 144 千米。216 + 144 = 360 千米，正好走完全程！':'观察线段：蓝色和橙色越来越长，中间的空隙越来越短。相遇时，两段路程合起来正好是 360 千米。';
+$('play').textContent=done?'↻ 再看一次':running?'Ⅱ 暂停演示':elapsed>0?'▶ 继续演示':'▶ 开始演示';}
+function frame(now){if(!running)return;if(last)elapsed=Math.min(1,elapsed+(now-last)/duration*Number($('speed').value));last=now;if(elapsed>=1)running=false;render();if(running)requestAnimationFrame(frame)}
+$('play').addEventListener('click',()=>{if(running){running=false;last=0;render();return}if(elapsed>=1)elapsed=0;running=true;last=0;render();requestAnimationFrame(frame)});
+$('reset').addEventListener('click',()=>{running=false;last=0;elapsed=0;render()});
+$('progress').addEventListener('input',()=>{running=false;last=0;elapsed=Number($('progress').value)/360;render()});render();
+</script></body></html>
